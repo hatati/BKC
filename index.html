@@ -1,0 +1,110 @@
+﻿<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - BKC</title>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script>
+        function setActiveNavLink(navLink) {
+            var isActive = navLink.classList.contains("active");
+            if (isActive)
+                return;
+            document.getElementsByClassName("active")[0].classList.remove("active");
+            navLink.classList.add("active");
+        }
+    </script>
+    <style>
+        .nav-item a {
+            color: black;
+        }
+
+            .nav-item a:hover {
+                color: blue;
+            }
+
+        .active {
+            background-color: white;
+        }
+
+        #navbar-container {
+            background-color: #E7F1F7
+        }
+    </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1000.0" data-gr-ext-installed="">
+    <div id="navbar-container" class="container-fluid">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-light p-0">
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul id="nav-list" class="navbar-nav px-3">
+                        <li class="nav-item"><a onclick="setActiveNavLink(this);" class="nav-link p-3 active" href="#">Forside</a></li>
+                        <li class="nav-item"><a onclick="setActiveNavLink(this);" class="nav-link p-3" href="#">Kontakt</a></li>
+                        <li class="nav-item"><a onclick="setActiveNavLink(this);" class="nav-link p-3" href="#">Om os</a></li>
+                        <li class="nav-item"><a onclick="setActiveNavLink(this);" class="nav-link p-3" href="#">Medlemskab</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            <style>
+
+                #top-bar {
+                    background-color: #FFE17F;
+                    height: 3vw;
+                }
+
+                #cover-container {
+                    background-color: #F3F0EB;
+                }
+
+                #cover-img {
+                    height: 25vw;
+                }
+
+                #cover-text {
+                    color: #013451;
+                    font-size: 3vw;
+                    font-weight: bold;
+                }
+            </style>
+
+            <div id="top-bar" class="text-center mb-1">
+                &nbsp;
+            </div>
+
+            <div id="cover-container" class="d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <img id="cover-img" src="images/BKC_Logo-19.svg" alt="Image text">
+                </div>
+                <div id="cover-text" class="mb-5">
+                    <p style="text-align: center;">Velkommen til<br>BKC Kolding</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            © 2021 - BKC - <a href="/Home/Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0"></script>
+
+
+
+</body>
+</html>
